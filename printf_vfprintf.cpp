@@ -1,7 +1,7 @@
 #include <stdarg.h>
 #include <stdio.h>
 
-void myprintf(const char* str, ...){
+void printf_vfprintf(const char* str, ...){
 	va_list ap;
 	va_start(ap, str);
 	vfprintf(stderr, str, ap);
@@ -9,6 +9,6 @@ void myprintf(const char* str, ...){
 }
 
 int main(){
-	myprintf("%d,%s,%s,%d\n", 6, "William", "Aiden", 5);
+	printf_vfprintf("%d,%s,%s,%d\n", 6, "William", "Aiden", 5);
 	return 0;
 }
