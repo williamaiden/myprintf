@@ -18,7 +18,7 @@ int main(void){
 	if (typeid(i).name() == typeid(int).name()){
 		printf("yes\n");
 	}
-	printf2(5, 1, 2, 3, 4, 5);
-	printf2(8, 1, 2, 3, 4, 5,6,7,8);
+	printf_va_arg(5, 1, 2, 3, 4, 5);
+	printf_va_arg(8, 1, 2, 3, 4, 5,6,7,8);
 	return 0;
 }
